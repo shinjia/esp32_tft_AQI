@@ -2,13 +2,13 @@
 
 /****** WiFi Access Point ******/
 
-#define WLAN_SSID   "babyBBB"
-#define WLAN_PASS   "yuan1234"
+#define WLAN_SSID   "***YOUR-WIFI-PASS***"
+#define WLAN_PASS   "***YOUR-WIFI-PASS***"
 
 /****** OpenData EPA API Key ***/
 
-#define API_KEY    "3c601de0-872a-4d2b-83fa-899ba7ad6663"
-#define SITE_NAME  "新莊"  // 新莊
+#define API_KEY    "***YOUR-API-KEY***"
+#define SITE_NAME  "***指定地區***"  // 新莊
 
 
 /****** Timer Control (delay) ******/
