@@ -1,13 +1,17 @@
-/* esp32_tft_AQI  by Shinjia  v1.0  2023/07/27 */
+/*******************************************
+esp32_tft_AQI  by Shinjia 
+- v1.1  2023/08/28
+- v1.0  2023/07/27
+*********************************************/
 
 /****** WiFi Access Point ******/
 
-#define WLAN_SSID   "***YOUR-WIFI-PASS***"
-#define WLAN_PASS   "***YOUR-WIFI-PASS***"
+#define WLAN_SSID   "Your_Wifi_SSID"
+#define WLAN_PASS   "Your_Wifi_Password"
 
-/****** OpenData EPA API Key ***/
+/****** OpenData API Key ***/
 
-#define API_KEY    "***YOUR-API-KEY***"
+#define API_KEY    "Your_API_Key"
 #define SITE_NAME  "***指定地區***"  // 新莊
 
 
@@ -296,7 +300,7 @@ void loop(void) {
       Serial.println("WiFi Disconnected");
     }
     else {      
-      String url = "https://data.epa.gov.tw/api/v2/aqx_p_432";
+      String url = "https://data.moenv.gov.tw/api/v2/aqx_p_432";
       url += "?format=json";
       url += "&limit=1";
       url += "&filters=SiteName,EQ," + String(SITE_NAME);
