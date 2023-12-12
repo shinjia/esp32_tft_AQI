@@ -1,5 +1,6 @@
 /*******************************************
 esp32_tft_AQI  by Shinjia 
+- v1.2  2023/12/12
 - v1.1  2023/08/28
 - v1.0  2023/07/27
 *********************************************/
@@ -58,10 +59,10 @@ boolean is_get_NTP = false;
 #include "Adafruit_ILI9341.h"
 
 #define TFT_DC   21
-#define TFT_CS   22
+#define TFT_CS   17
 #define TFT_MOSI 23
 #define TFT_CLK  18
-#define TFT_RST   5
+#define TFT_RST  22
 #define TFT_MISO 19
 
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST, TFT_MISO);
